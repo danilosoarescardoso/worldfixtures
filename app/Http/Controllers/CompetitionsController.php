@@ -11,11 +11,11 @@ class CompetitionsController extends Controller
     public function list(){
 
         //List all teams for a certain competition.
-        $teams = Football::getLeagueTeams(444);
-        $teams = $teams->teams;
+        $dataLeagueTeams = Football::getLeagueTeams(444);
+        $teams = $dataLeagueTeams->teams;
         
-        // debug teams
-        // dd($teams);
+        // debug teams (dump && die)
+        // dd($teams); 
 
         return view('teste', compact('teams'));
     }
