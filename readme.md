@@ -9,4 +9,4 @@
 
 ## About the project
 
-The purpose of this project it's to consume the [FootBall Data API](http://api.football-data.org/), learning how to consume REST resources and manipulate them correctly.  
+The purpose of this project it's to consume the [FootBall Data API](http://api.football-data.org/), learning how to consume REST resources and manipulate them correctly. 
