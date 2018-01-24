@@ -20,7 +20,7 @@
     <div class="container-fluid">
 
     <div class="navbar-header">      
-      <a class="navbar-brand">World Fixtures</a>
+      <a class="navbar-brand" href="/">World Fixtures</a>
     </div>
 
     </div>

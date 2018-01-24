@@ -8,16 +8,17 @@
 
 	<button type="button" class="btn btn-default">Fixtures</button>
 	<button type="button" class="btn btn-default">Teams</button>
-	<button type="button" class="btn btn-default">Table</button>
+	<a href="/competitions/table/{{ $id }}"><button type="button" class="btn btn-default">Table</button></a>
 
 
 
-	@foreach($teams as $team)
+
+{{-- 	@foreach($teams as $team)
 
 		<ul>
 			<li>{{ $team->name }}</li>
 		</ul>
 
-	@endforeach
+	@endforeach --}}
 
 @stop

@@ -35,16 +35,41 @@ class CompetitionsController extends Controller
         return view('Filters/competitions', compact('leagues'));
     }
 
+    // public function listTeams($idLeague){
+
+    //     //List all the teams in a competition.
+    //     $leagueTeams = Football::getLeagueTeams($idLeague);
+    //     $teams = $leagueTeams->teams;
+
+    //     //dd($teams);
+
+    //     return view('Filters/details', compact('teams'));
+    //}    
+
     public function competitionDetails($idLeague){
 
         //List all the competitions.
-        $leagueTeams = Football::getLeagueTeams($idLeague);
-        $teams = $leagueTeams->teams;
+        $id = $idLeague;
 
         //dd($teams);
 
-        return view('Filters/details', compact('teams'));
+        return view('Filters/details')->with('id', $id);
     }
+
+    public function competitionTable($id){
+
+        //List all the competitions.
+        $getLeagueTable = Football::LeagueTable($id);
+        $leagueTable = $getLeagueTable->standing;
+
+        //dd($leagueTable);
+
+        return view('Filters/table', compact('leagueTable'));
+
+
+    }
+
+    
 }
 
 

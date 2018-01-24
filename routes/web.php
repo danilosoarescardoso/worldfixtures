@@ -13,4 +13,4 @@
 
 Route::get('/', 'CompetitionsController@listLeagues');
 Route::get('/competitions/details/{id?}', 'CompetitionsController@competitionDetails');
-
+Route::get('/competitions/table/{id?}', 'CompetitionsController@competitionTable');
