@@ -34,6 +34,17 @@ class CompetitionsController extends Controller
 
         return view('Filters/competitions', compact('leagues'));
     }
+
+    public function competitionDetails($idLeague){
+
+        //List all the competitions.
+        $leagueTeams = Football::getLeagueTeams($idLeague);
+        $teams = $leagueTeams->teams;
+
+        //dd($teams);
+
+        return view('Filters/details', compact('teams'));
+    }
 }
 
 

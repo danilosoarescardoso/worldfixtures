@@ -7,8 +7,9 @@
 
 	@foreach($leagues as $league)
 
-		<button type="button" class="btn btn-default">{{ $league->caption }}</button>
+		<a href="/competitions/details/{{ $league->id }}"><button type="button" class="btn btn-default" >{{ $league->caption }}</button></a>
 
 	@endforeach
+
 
 @stop
