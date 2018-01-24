@@ -29,7 +29,7 @@
 
 
     @yield('conteudo')
-
+<br><br>
   <footer class="footer">
       <p>© <a href="http://danilosoarescardoso.github.io"> Danilo Soares Cardoso</a>, 2018.</p>
   </footer>

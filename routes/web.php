@@ -11,9 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('principal');
-});
-
-Route::get('/competitions', 'CompetitionsController@list');
+Route::get('/', 'CompetitionsController@listLeagues');
 

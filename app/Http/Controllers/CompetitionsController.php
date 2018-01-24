@@ -8,15 +8,27 @@ use Football;
 class CompetitionsController extends Controller
 {
 
-    public function list(){
+    // public function list(){
 
-        //List all teams for a certain competition.
-        $teams = Football::getLeagueTeams(444);
-        $teams = $teams->teams;
+    //     //List all teams for a certain competition.
+    //     $get = Football::getLeagueTeams(444);
+    //     $teams = $get->teams;
         
-        // debug teams
-        // dd($teams);
+    //     //debug teams
+    //     //dd($teams);
 
-        return view('teste', compact('teams'));
+    //     return view('Filters/competitions', compact('teams'));
+    // }
+
+    public function listLeagues(){
+
+        //List all the competitions.
+        $leagues = Football::getLeagues();
+
+        return view('Filters/competitions', compact('leagues'));
     }
 }
+
+
+
+ 

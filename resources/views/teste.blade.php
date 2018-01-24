@@ -4,8 +4,10 @@
 @section('conteudo')
 
 	<ul>
-	@foreach($teams as $team)
-		<li><strong>Name: </strong> {{ $team->name }}</li>
+	@foreach($leagues as $league)
+
+		<button type="button" class="btn btn-default">{{ $league->caption }}</button>
+
 	@endforeach
 	</ul>
 
